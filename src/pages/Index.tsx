@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 
 const players = [
-  { nickname: "T1mPro", realName: "T1mPro", role: "AWP", iconColor: "text-primary" },
+  { nickname: "T1mPro", realName: "Awp", role: "AWP", iconColor: "text-primary" },
   { nickname: "Geness1s", realName: "Captain", role: "Captain", iconColor: "text-blue-400" },
   { nickname: "20.31", realName: "Rifler", role: "Rifler", iconColor: "text-green-400" },
   { nickname: "LIL_Nastuysha", realName: "Support", role: "Support", iconColor: "text-purple-400" },
