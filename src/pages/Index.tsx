@@ -10,12 +10,7 @@ const players = [
   { nickname: "qwalaz", realName: "Lurker", role: "Lurk", iconColor: "text-red-400" },
 ];
 
-const matches = [
-  { date: "20 Января 2026", tournament: "IEM Katowice 2026", opponent: "Natus Vincere", time: "18:00 МСК", status: "upcoming" },
-  { date: "23 Января 2026", tournament: "BLAST Premier Spring", opponent: "FaZe Clan", time: "21:00 МСК", status: "upcoming" },
-  { date: "15 Января 2026", tournament: "ESL Pro League", opponent: "Team Liquid", result: "16:14", status: "win" },
-  { date: "12 Января 2026", tournament: "PGL Major", opponent: "G2 Esports", result: "13:16", status: "loss" },
-];
+
 
 export default function Index() {
   return (
@@ -37,9 +32,6 @@ export default function Index() {
             <nav className="hidden md:flex gap-8">
               <a href="#players" className="text-foreground hover:text-primary transition-colors font-medium">
                 Игроки
-              </a>
-              <a href="#matches" className="text-foreground hover:text-primary transition-colors font-medium">
-                Матчи
               </a>
             </nav>
           </div>
@@ -95,66 +87,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section id="matches" className="space-y-8 animate-fade-in-up">
-          <div className="text-center space-y-2">
-            <h3 className="text-4xl font-heading font-bold text-foreground">Расписание матчей</h3>
-            <p className="text-muted-foreground">Предстоящие и последние игры</p>
-          </div>
-          <div className="space-y-4 max-w-4xl mx-auto">
-            {matches.map((match, index) => (
-              <Card
-                key={index}
-                className={`bg-card border-border p-6 hover:border-primary transition-all duration-300 ${
-                  match.status === "upcoming" ? "border-l-4 border-l-primary" : ""
-                }`}
-              >
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                  <div className="flex-1 space-y-2">
-                    <div className="flex items-center gap-3">
-                      <Icon
-                        name={match.status === "upcoming" ? "Calendar" : match.status === "win" ? "Trophy" : "X"}
-                        className={`w-5 h-5 ${
-                          match.status === "upcoming"
-                            ? "text-primary"
-                            : match.status === "win"
-                            ? "text-green-400"
-                            : "text-red-400"
-                        }`}
-                      />
-                      <span className="text-sm text-muted-foreground">{match.date}</span>
-                    </div>
-                    <h4 className="text-xl font-heading font-semibold text-foreground">{match.tournament}</h4>
-                    <p className="text-foreground flex items-center gap-2">
-                      <span className="font-medium">DL-Team</span>
-                      <span className="text-muted-foreground">vs</span>
-                      <span className="font-medium">{match.opponent}</span>
-                    </p>
-                  </div>
-                  <div className="text-right">
-                    {match.status === "upcoming" ? (
-                      <div className="space-y-1">
-                        <div className="text-2xl font-heading font-bold text-primary">{match.time}</div>
-                        <Badge variant="outline" className="text-primary border-primary">
-                          Скоро
-                        </Badge>
-                      </div>
-                    ) : (
-                      <div className="space-y-1">
-                        <div className="text-2xl font-heading font-bold text-foreground">{match.result}</div>
-                        <Badge
-                          variant={match.status === "win" ? "default" : "destructive"}
-                          className={match.status === "win" ? "bg-green-600" : ""}
-                        >
-                          {match.status === "win" ? "Победа" : "Поражение"}
-                        </Badge>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </section>
+
       </main>
 
       <footer className="border-t border-border mt-24 py-8">
