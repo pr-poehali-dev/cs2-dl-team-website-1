@@ -3,11 +3,11 @@ import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 
 const players = [
-  { nickname: "Awaper", realName: "T1mPro", role: "Captain", iconColor: "text-primary" },
-  { nickname: "Geness1s", realName: "Support", role: "Support", iconColor: "text-blue-400" },
+  { nickname: "Awaper", realName: "T1mPro", role: "AWP", iconColor: "text-primary" },
+  { nickname: "Geness1s", realName: "Captain", role: "Captain", iconColor: "text-blue-400" },
   { nickname: "20.31", realName: "Rifler", role: "Rifler", iconColor: "text-green-400" },
-  { nickname: "Lil_nastusha", realName: "Lurk", role: "Lurk", iconColor: "text-purple-400" },
-  { nickname: "qwalaz", realName: "Entry", role: "Entry Fragger", iconColor: "text-red-400" },
+  { nickname: "Lil_nastusha", realName: "Support", role: "Support", iconColor: "text-purple-400" },
+  { nickname: "qwalaz", realName: "Lurker", role: "Lurk", iconColor: "text-red-400" },
 ];
 
 const matches = [
@@ -25,7 +25,7 @@ export default function Index() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <img 
-                src="https://cdn.poehali.dev/projects/d854fff4-937c-4563-b261-5e10bbc1ea85/files/1c959703-4e34-4c51-9c4f-b5e704f6e234.jpg" 
+                src="https://cdn.poehali.dev/files/IMG_1359.jpeg" 
                 alt="DL-Team Logo" 
                 className="w-12 h-12 rounded-lg object-cover"
               />
@@ -63,16 +63,6 @@ export default function Index() {
             <div className="text-center">
               <div className="text-4xl font-heading font-bold text-primary">5</div>
               <div className="text-sm text-muted-foreground">Игроков</div>
-            </div>
-            <div className="w-px h-12 bg-border"></div>
-            <div className="text-center">
-              <div className="text-4xl font-heading font-bold text-primary">12</div>
-              <div className="text-sm text-muted-foreground">Турниров</div>
-            </div>
-            <div className="w-px h-12 bg-border"></div>
-            <div className="text-center">
-              <div className="text-4xl font-heading font-bold text-primary">#8</div>
-              <div className="text-sm text-muted-foreground">Мировой рейтинг</div>
             </div>
           </div>
         </section>
