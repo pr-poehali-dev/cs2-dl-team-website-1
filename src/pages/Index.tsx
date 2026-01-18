@@ -8,7 +8,7 @@ const players = [
   { nickname: "20.31", realName: "Rifler", role: "Rifler", iconColor: "text-green-400" },
   { nickname: "LIL_Nastuysha", realName: "Support", role: "Support", iconColor: "text-purple-400" },
   { nickname: "qwalaz", realName: "Lurker", role: "Lurk", iconColor: "text-red-400" },
-  { nickname: "Reserve", realName: "Substitute", role: "Reserve", iconColor: "text-orange-400" },
+  { nickname: "Donsollan", realName: "Substitute", role: "Reserve", iconColor: "text-orange-400" },
 ];
 
 
