@@ -34,6 +34,9 @@ export default function Index() {
               <a href="#players" className="text-foreground hover:text-primary transition-colors font-medium">
                 Игроки
               </a>
+              <a href="#trophies" className="text-foreground hover:text-primary transition-colors font-medium">
+                Трофеи
+              </a>
             </nav>
           </div>
         </div>
@@ -88,6 +91,16 @@ export default function Index() {
           </div>
         </section>
 
+        <section id="trophies" className="space-y-8 animate-fade-in-up">
+          <div className="text-center space-y-2">
+            <h3 className="text-4xl font-heading font-bold text-foreground">Трофеи</h3>
+            <p className="text-muted-foreground">Наши достижения и награды</p>
+          </div>
+          <div className="text-center py-16">
+            <Icon name="Trophy" className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
+            <p className="text-muted-foreground">Скоро здесь появятся наши трофеи</p>
+          </div>
+        </section>
 
       </main>
 
