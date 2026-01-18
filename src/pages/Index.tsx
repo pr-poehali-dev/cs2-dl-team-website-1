@@ -8,6 +8,7 @@ const players = [
   { nickname: "20.31", realName: "Rifler", role: "Rifler", iconColor: "text-green-400" },
   { nickname: "LIL_Nastuysha", realName: "Support", role: "Support", iconColor: "text-purple-400" },
   { nickname: "qwalaz", realName: "Lurker", role: "Lurk", iconColor: "text-red-400" },
+  { nickname: "Reserve", realName: "Substitute", role: "Reserve", iconColor: "text-orange-400" },
 ];
 
 
@@ -53,7 +54,7 @@ export default function Index() {
           </p>
           <div className="flex items-center justify-center gap-8 pt-8">
             <div className="text-center">
-              <div className="text-4xl font-heading font-bold text-primary">5</div>
+              <div className="text-4xl font-heading font-bold text-primary">6</div>
               <div className="text-sm text-muted-foreground">Игроков</div>
             </div>
           </div>
