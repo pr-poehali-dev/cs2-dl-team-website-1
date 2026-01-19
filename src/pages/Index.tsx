@@ -37,6 +37,9 @@ export default function Index() {
               <a href="#trophies" className="text-foreground hover:text-primary transition-colors font-medium">
                 Трофеи
               </a>
+              <a href="#news" className="text-foreground hover:text-primary transition-colors font-medium">
+                Новости
+              </a>
             </nav>
           </div>
         </div>
@@ -99,6 +102,35 @@ export default function Index() {
           <div className="text-center py-16">
             <Icon name="Trophy" className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
             <p className="text-muted-foreground">Скоро здесь появятся наши трофеи</p>
+          </div>
+        </section>
+
+        <section id="news" className="space-y-8 animate-fade-in-up">
+          <div className="text-center space-y-2">
+            <h3 className="text-4xl font-heading font-bold text-foreground">Новости</h3>
+            <p className="text-muted-foreground">Последние события команды</p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <Card className="bg-card border-border p-8 hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <Badge variant="outline" className="text-primary border-primary">
+                    Новость
+                  </Badge>
+                  <span className="text-sm text-muted-foreground">19 января 2026</span>
+                </div>
+                <h4 className="text-2xl font-heading font-bold text-foreground">
+                  Наша команда готовится к MLT
+                </h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  DL-Team активно готовится к предстоящему турниру MLT. Команда усиленно тренируется, отрабатывая стратегии и синхронность действий. Следите за нашими обновлениями!
+                </p>
+                <div className="flex items-center gap-2 text-primary">
+                  <Icon name="Calendar" className="w-5 h-5" />
+                  <span className="text-sm font-medium">Турнир MLT скоро начнется</span>
+                </div>
+              </div>
+            </Card>
           </div>
         </section>
 
